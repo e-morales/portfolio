@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import myRoutes from './config/routes';
-import './App.css';
+import './css/App.css';
 import { Layout } from './components/Layout';
-import Bitmoji from './Bitmoji';
+import Bitmoji from './components/Bitmoji';
 import { NavigationBar } from './components/NavigationBar';
+import About from './components/About';
 
 class App extends Component {
   render(){
@@ -11,6 +12,7 @@ class App extends Component {
       <React.Fragment>
         <NavigationBar />
         <Layout>
+          <About />
           <div className="App">
             { myRoutes }
             <Bitmoji />

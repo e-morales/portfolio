@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './App.css';
-import typingbit from './typing-bit.png';
-import onionsbit from './onions-bit.png';
+import '../css/App.css';
+import typingbit from '../assets/typing-bit.png';
+import onionsbit from '../assets/onions-bit.png';
 
 
 class Bitmoji extends Component {

@@ -1,0 +1,17 @@
+h1, h2 {
+    text-align: center;
+}
+
+.about {
+    height: 80vh;
+}
+
+p {
+    text-align: right;
+}
+
+.greeting {
+    position: absolute;
+    right: 5em;
+    top: 5em;
+}
