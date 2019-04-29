@@ -12,7 +12,7 @@ class About extends Component {
                 <Col sm={3}>
                     <img src={hibit} />
                 </Col>
-                <Col sm={8}>
+                <Col className="center" sm={8}>
                     <h1> Hi, my name is Enrique</h1>
                 </Col>
             </Row>

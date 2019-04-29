@@ -5,6 +5,8 @@ import { Layout } from './components/Layout';
 import Bitmoji from './components/Bitmoji';
 import { NavigationBar } from './components/NavigationBar';
 import About from './components/About';
+import Skills from './components/Skills';
+
 
 class App extends Component {
   render(){
@@ -13,6 +15,7 @@ class App extends Component {
         <NavigationBar />
         <Layout>
           <About />
+          <Skills />
           <div className="App">
             { myRoutes }
             <Bitmoji />
