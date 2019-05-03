@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
 import myRoutes from './config/routes';
+import { BrowserRouter } from 'react-router-dom';
 import './css/App.css';
-import { Layout } from './components/Layout';
-import Bitmoji from './components/Bitmoji';
-import { NavigationBar } from './components/NavigationBar';
+import NavigationBar from './components/NavigationBar';
 import About from './components/About';
-import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 class App extends Component {
   render(){
     return (
-      <React.Fragment>
+      <BrowserRouter>
+        <div>
         <NavigationBar />
-        <Layout>
-          <About />
-          <Skills />
-          <div className="App">
-            { myRoutes }
-            <Bitmoji />
-          </div>
-        </Layout>
-      </React.Fragment>
+          
+      </div>
+      </BrowserRouter>
+      
     );
   }
 }

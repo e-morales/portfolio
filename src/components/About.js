@@ -8,7 +8,7 @@ import { Row, Col } from 'react-bootstrap';
 class About extends Component {
     render(){
         return(
-            <Row>
+            <Row className="about">
                 <Col sm={3}>
                     <img src={hibit} />
                 </Col>

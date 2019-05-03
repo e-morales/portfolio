@@ -1,44 +1,97 @@
-import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Nav } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import praybit from '../assets/pray-bit.png';
+import { Route, Link, Switch } from 'react-router-dom';
+import About from './About';
+import Skills from './Skills';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+
 
 
 
 const Styles = styled.div`
-    .navbar {
-        background-color: #222;
+    
+    a {     
+        display: block;     
+        padding: .25em;
+        text-decoration: none;
+        color: black;     
+     }
+    
+    .nav-tabs .nav-link.active{
+        border: 2px solid black; 
+        border-color: black black transparent;
     }
 
-    .navbar-brand, .navbar-nav, .nav-link {
-        color: #bbb;
-
-        &:hover {
-            color: white;
-        }
+    .nav-link {
+        border-bottom: 2px solid black;
     }
+    
+    .nav-tabs.active {
+        border-bottom: 2px solid black;
+    }
+
+    .nav-tab:hover, .nav-link:hover {
+        border-top: 2px solid lightgray;
+        border-right: 2px solid lightgray;
+        border-bottom: 2px solid white;
+        border-left: 2px solid lightgray;
+
+    }  
+
 `;
 
-export const NavigationBar = () => (
-    <Styles>
-        <Navbar expand="lg">
-            <Navbar.Brand href="/">
-                <img
-                    alt=""
-                    src={ praybit }
-                    width="60"
-                    height="60"
-                    className="d-inline-block align-top"
-                />
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Item><Link to={'/'}>Home</Link></Nav.Item>
-                    <Nav.Item><Link to={'/about'}>About</Link></Nav.Item>
+
+class NavigationBar extends Component{
+    render() {
+        return(
+            <Styles>
+                <Nav fill className="justify-content-center" variant="tabs" defaultActiveKey="/home">
+                    <Nav.Item>
+                        <Nav.Link eventKey="/home"><Link to='/about'>About</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="/about"><Link to='/skills'>Skills</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="/projects"><Link to='/projects'>Projects</Link></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link eventKey="/contact"><Link to='/contact'>Contact</Link></Nav.Link>
+                    </Nav.Item>
+
                 </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    </Styles>
-)
+                <Switch>
+        <Route exact path='/' component={ About } />
+        <Route exact path='/about' component={ About } />
+        <Route exact path='/skills' component={ Skills } />
+        <Route path='/projects' component={ Projects } />
+        <Route path='/contact' component={ Contact } />
+    </Switch>
+            </Styles>
+        )
+    }
+}
+    
+export default NavigationBar;
+
+
+
+    // <Styles>
+    //     {/* <Navbar expand="lg">
+    //         <Navbar.Brand href="/">
+    //             <img
+    //                 alt=""
+    //                 src={ praybit }
+    //                 width="60"
+    //                 height="60"
+    //                 className="d-inline-block align-top"
+    //             />
+    //         </Navbar.Brand>
+    //         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    //         <Navbar.Collapse id="basic-navbar-nav">
+                
+    //         </Navbar.Collapse>
+    //     </Navbar> */}
+    // </Styles>
