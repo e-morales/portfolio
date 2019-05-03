@@ -14,6 +14,7 @@ class About extends Component {
                 </Col>
                 <Col className="center" sm={8}>
                     <h1> Hi, my name is Enrique</h1>
+                    <h4>Web Developer | UI UX Designer</h4>
                 </Col>
             </Row>
         )

@@ -38,7 +38,11 @@ const Styles = styled.div`
         border-bottom: 2px solid white;
         border-left: 2px solid lightgray;
 
-    }  
+    }
+    
+    .nav {
+        margin-bottom: 4em;
+    }
 
 `;
 
@@ -52,7 +56,7 @@ class NavigationBar extends Component{
                         <Nav.Link eventKey="/home"><Link to='/about'>About</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="/about"><Link to='/skills'>Skills</Link></Nav.Link>
+                        <Nav.Link eventKey="/skills"><Link to='/skills'>Skills</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="/projects"><Link to='/projects'>Projects</Link></Nav.Link>

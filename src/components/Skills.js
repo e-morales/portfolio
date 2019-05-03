@@ -28,12 +28,6 @@ class Skills extends Component {
                 <Row className="space">
                     <Col className='center'>
                         <Row className="hovering center">
-                            <Col><img src={ai} width='50' /></Col>
-                            <Col><img src={ps} width='50' /></Col>
-                            <Col><img src={sketch} width='50' /></Col>
-                            <Col><img src={bootstrap} width='50' /></Col>
-                        </Row>
-                        <Row className="center">
                             <Col><img src={css} width='50' /></Col>
                             <Col><img src={html} width='50' /></Col>
                             <Col><img src={sass} width='50'/></Col>
@@ -46,8 +40,16 @@ class Skills extends Component {
                             <Col><img src={react} width='50' /></Col>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col  className="center">
                         <img src={lordbit} className="fluid" />
+                    </Col>
+                    <Col  className="center">
+                    <Row className="hovering center">
+                            <Col><img src={ai} width='50' /></Col>
+                            <Col><img src={ps} width='50' /></Col>
+                            <Col><img src={sketch} width='50' /></Col>
+                            <Col><img src={bootstrap} width='50' /></Col>
+                        </Row>
                     </Col>
                 </Row>    
             </Container>
