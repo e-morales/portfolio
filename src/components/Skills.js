@@ -28,27 +28,27 @@ class Skills extends Component {
                 <Row className="space">
                     <Col className='center'>
                         <Row className="hovering center">
-                            <Col><img src={css} width='50' /></Col>
-                            <Col><img src={html} width='50' /></Col>
-                            <Col><img src={sass} width='50'/></Col>
-                            <Col><img src={postman} width='50' /></Col>
+                            <Col><img src={css} alt="" width='50' /></Col>
+                            <Col><img src={html} alt="" width='50' /></Col>
+                            <Col><img src={sass} alt="" width='50'/></Col>
+                            <Col><img src={postman} alt="" width='50' /></Col>
                         </Row>
                         <Row className="hovering space center">
-                            <Col><img src={mongod} width='50' /></Col>
-                            <Col><img src={node} width='50' /></Col>
-                            <Col><img src={python} width='50' /></Col>
-                            <Col><img src={react} width='50' /></Col>
+                            <Col><img src={mongod} alt="" width='50' /></Col>
+                            <Col><img src={node} alt="" width='50' /></Col>
+                            <Col><img src={python} alt="" width='50' /></Col>
+                            <Col><img src={react} alt="" width='50' /></Col>
                         </Row>
                     </Col>
                     <Col  className="center">
-                        <img src={lordbit} className="fluid" />
+                        <img src={lordbit} alt="" className="fluid" />
                     </Col>
                     <Col  className="center">
                     <Row className="hovering center">
-                            <Col><img src={ai} width='50' /></Col>
-                            <Col><img src={ps} width='50' /></Col>
-                            <Col><img src={sketch} width='50' /></Col>
-                            <Col><img src={bootstrap} width='50' /></Col>
+                            <Col><img src={ai} alt="" width='50' /></Col>
+                            <Col><img src={ps} alt="" width='50' /></Col>
+                            <Col><img src={sketch} alt="" width='50' /></Col>
+                            <Col><img src={bootstrap} alt="" width='50' /></Col>
                         </Row>
                     </Col>
                 </Row>    

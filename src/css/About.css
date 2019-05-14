@@ -1,21 +1,20 @@
 h1, h2, h3, h4 {
     text-align: center;
+    color: lightgray;
 }
 
-.about {
-    height: 80vh;
+ i {
+    font-size: 40px;
+    color: rgb(255, 225, 0);
+    padding: .5em;
 }
 
-p {
-    text-align: right;
+.center a {
+    text-align: center;
+    padding: 1em;
 }
 
-.greeting {
-    position: absolute;
-    right: 5em;
-    top: 5em;
-}
 
-.center {
-    margin: auto;
-}
+
+
+
