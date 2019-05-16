@@ -16,28 +16,28 @@ const Styles = styled.div`
         display: block;     
         padding: .25em;
         text-decoration: none;
-        color: black;     
+        color: yellow;     
      }
     
     .nav-tabs .nav-link.active{
-        border: 2px solid black; 
-        border-color: black black transparent;
+        border: 2px solid yellow; 
+        border-color: yellow yellow transparent;
+        background: black;
     }
 
     .nav-link {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid yellow;
     }
     
     .nav-tabs.active {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid yellow;
     }
 
     .nav-tab:hover, .nav-link:hover {
-        border-top: 2px solid lightgray;
-        border-right: 2px solid lightgray;
-        border-bottom: 2px solid white;
-        border-left: 2px solid lightgray;
-
+        border-top: 1px solid yellow;
+        border-right: 1px solid yellow;
+        border-left: 1px solid yellow;
+        border-bottom: 1px solid yellow;
     }
     
     .nav {

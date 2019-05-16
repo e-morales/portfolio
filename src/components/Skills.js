@@ -33,6 +33,9 @@ class Skills extends Component {
                             <Col><img src={sass} alt="" width='50'/></Col>
                             <Col><img src={postman} alt="" width='50' /></Col>
                         </Row>
+                        <Row>
+                            
+                        </Row>
                         <Row className="hovering space center">
                             <Col><img src={mongod} alt="" width='50' /></Col>
                             <Col><img src={node} alt="" width='50' /></Col>
